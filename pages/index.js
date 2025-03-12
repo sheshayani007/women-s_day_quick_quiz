@@ -51,7 +51,17 @@ export default function Quiz() {
               return (
                 <div
                   key={index}
-                  onClick={() => handleAnswerClick(option)}
+                  onClick={() => {
+                    if (selectedAnswer) return; // Prevent multiple selections
+                    setSelectedAnswer(option);
+              
+                    if (option === currentQuestion.correct_answer) {
+                      fireConfetti(); // 🎉 Trigger confetti animation
+                    }
+              
+                    setTimeout(() => setShowResult(true), 300);
+                  }} 
+
                   style={{
                     ...styles.optionBox,
                     borderColor: isSelected
@@ -66,9 +76,11 @@ export default function Quiz() {
                       ...styles.bullet,
                       borderColor: isSelected ? (isCorrect ? 'green' : 'red') : '#bbb',
                       backgroundColor: isSelected ? (isCorrect ? 'green' : 'red') : 'transparent',
+                      animation: selectedAnswer && option !== currentQuestion.correct_answer ? 'shake 5s ease-in-out' : 'none',
                     }}
                   >
-                    {isSelected ? (isCorrect ? '🎉' : '☹️') : String.fromCharCode(65 + index)}
+                    {isSelected ? (isCorrect ? '🎉' : '😔') : String.fromCharCode(65 + index)}
+
                   </span>
                   {option}
                 </div>
@@ -119,6 +131,8 @@ export default function Quiz() {
   );
 }
 
+
+
 const styles = {
   container: {
     display: 'flex',
@@ -138,6 +152,9 @@ const styles = {
     maxWidth: '500px',
     width: '70%',
     overflow: 'auto',
+    scrollbarWidth: 'none', 
+    marginTop: '20px',
+    marginBottom: '20px',
     transition: 'all 0.5s ease',
   
   },
@@ -196,18 +213,22 @@ const styles = {
     padding: '10px',
     borderRadius: '10px',
     marginTop: '10px',
+    marginBottom: '10px',
   },
   image: {
-    width: '80%',
+    width: '100%',
     maxWidth: '200px',
     borderRadius: '8px',
     marginBottom: '10px',
+    marginTop: '10px',
     animation: 'fadeIn 0.9s forwards'
   },
   story: {
     fontSize: '16px',
     color: 'gray',
     textAlign: 'left',
+    marginBottom: '10px',
+    marginTop: '10px',
     animation: 'fadeIn 2s forwards'
   },
   nextButton: {
@@ -227,5 +248,33 @@ const styles = {
     fontSize: '14px',
     color: '#51074a',
   },
+  keyframesShake: {
+    '0%': { transform: 'translateX(0)' },
+    '25%': { transform: 'translateX(-3px)' },
+    '50%': { transform: 'translateX(3px)' },
+    '75%': { transform: 'translateX(-3px)' },
+    '100%': { transform: 'translateX(0)' },
+  },
 };
 
+import confetti from 'canvas-confetti';
+
+const fireConfetti = () => {
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 }, // Adjust origin for better effect
+    colors: ['#ffb6c1', '#8f83d8', '#d69cbc', '#51074a', '#191970'],
+  });
+};
+
+// Call `fireConfetti()` when the user selects the correct answer
+
+const triggerSadEffect = (x, y) => {
+  confetti({
+    particleCount: 30,
+    spread: 70,
+    origin: { y: 0.6 }, // Adjust origin for better effect,
+    colors: ['#ff0000', '#ff6961'],
+  });
+}; // Call `triggerSadEffect()` when the user selects the wrong answer
