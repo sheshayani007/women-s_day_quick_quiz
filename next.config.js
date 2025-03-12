@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-    output: 'export', // This makes Next.js generate static HTML for Vercel
+    output: 'standalone', // This allows Next.js to generate a standalone server
     images: {
       unoptimized: true, // Fix for static site deployments
     },
