@@ -43,7 +43,7 @@ export default function Quiz() {
 
   return (
     <div style={styles.container}>
-      {!quizEnded && <h2 style={styles.quizTitle}>Women’s Day Quick Quiz</h2>} {/* Title only for questions */}
+      {!quizEnded && <h2 style={styles.quizTitle}>Awe-Spiring Women in STEM!</h2>} {/* Title only for questions */}
 
       <div style={styles.card}>
         {!quizEnded ? (
