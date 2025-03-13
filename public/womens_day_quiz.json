@@ -15,9 +15,9 @@
     {
       "question": "Groundbreaking physics theorem - woman mathematician's principle on symmetries and what laws?",
       "options": [
+        "Conservation Laws",
         "Laws of Thermodynamics",
         "Quantum Uncertainty Principles",
-        "Conservation Laws",
         "Laws of Electromagnetism"
       ],
       "correct_answer": "Conservation Laws",
@@ -28,8 +28,8 @@
       "question": "Woman's ingenuity - which kitchen item?",
       "options": [
         "Percolator System",
-        "French Press Method",
         "Coffee Filter",
+        "French Press Method",
         "Espresso Machine Technology"
       ],
       "correct_answer": "Coffee Filter",
@@ -55,8 +55,8 @@
       "question": "Which of these surgical technologies is credited to a woman inventor?",
       "options": [
         "Minimally Invasive Incision Technique",
-        "Laserphaco Probe",
         "Enhanced Microscopic Visualization",
+        "Laserphaco Probe",
         "Precision Robotic Suturing System"
       ],
       "correct_answer": "Laserphaco Probe",
@@ -94,8 +94,8 @@
       "question": "Which of these energy theories is credited to a woman physicist?",
       "options": [
         "Quantum Field Theory",
-        "String Theory",
         "Nuclear Fission Theory",
+        "String Theory",
         "Theory of General Relativity"
       ],
       "correct_answer": "Nuclear Fission Theory",
@@ -107,8 +107,8 @@
       "options": [
         "Quantum Chess",
         "Strategic Resource Management Game",
-        "Monopoly",
-        "Non-Euclidean Board Game"
+        "Non-Euclidean Board Game",
+        "Monopoly"
       ],
       "correct_answer": "Monopoly",
       "inventor_image_url": "https://static01.nyt.com/images/2024/04/15/multimedia/00overlooked-magie-top-bjtc-print1/00overlooked-magie-top-bjtc-superJumbo.jpg?quality=75&auto=webp",
@@ -133,9 +133,9 @@
       "question": "Which of these newborn assessments is credited to a woman physician?",
       "options": [
         "Blood Pressure Test",
-        "Apgar Score",
         "Reflex Test",
-        "Temperature Check"
+        "Temperature Check",
+        "Apgar Score"
       ],
       "correct_answer": "Apgar Score",
       "inventor_image_url": "https://litfl.com/wp-content/uploads/2020/03/Virginia-Apgar-1909-1974-300.jpeg",
@@ -159,9 +159,9 @@
     {
       "question": "Astrophysical sensation - woman astronomer's discovery of which celestial objects?",
       "options": [
+        "Pulsars (Pulsating Radio Sources)",
         "Magnetars (Magnetic Star Type)",
         "Quasars (Quasi-Stellar Radio Sources)",
-        "Pulsars (Pulsating Radio Sources)",
         "Blazars (Blazing Radio Sources)"
       ],
       "correct_answer": "Pulsars (Pulsating Radio Sources)",
@@ -184,8 +184,8 @@
       "question": "Woman's ingenuity - which kitchen item?",
       "options": [
         "Motion-Activated Waste Receptacle System",
-        "Biometric Authentication Pedal Bin",
         "Foot-Pedal Trash Can",
+        "Biometric Authentication Pedal Bin",
         "Voice-Commanded Disposal Unit"
       ],
       "correct_answer": "Foot-Pedal Trash Can",
@@ -200,8 +200,8 @@
       "options": [
         "Colossus Codebreaking Computer Programmers",
         "Harvard Mark I Relay Computer Team",
-        "ENIAC Programmers",
-        "UNIVAC I Software Development Group"
+        "UNIVAC I Software Development Group",
+        "ENIAC Programmers"
       ],
       "correct_answer": "ENIAC Programmers",
       "inventor_image_url": "https://spectrum.ieee.org/media-library/collage-of-vintage-photographs-of-six-women.jpg?id=32130430&width=700&quality=85",
@@ -211,8 +211,8 @@
       "question": "Transformative medical treatment - woman scientist pioneered use of what for cancer therapy?",
       "options": [
         "Focused Ultrasound Therapy",
-        "Cryoablation Therapy",
         "Medical use of Radioisotopes",
+        "Cryoablation Therapy",
         "Photodynamic Therapy"
       ],
       "correct_answer": "Medical use of Radioisotopes",
@@ -222,9 +222,9 @@
     {
       "question": "Everyday design upgrade - woman inventor's improvement to which common container?",
       "options": [
+        "Modern Paper Bag",
         "Self-Sealing Food Storage Bag",
         "Insulated Shipping Container",
-        "Modern Paper Bag",
         "Reusable Shopping Tote"
       ],
       "correct_answer": "Modern Paper Bag",
@@ -237,9 +237,9 @@
     {
       "question": "Which 'celestial event' is linked to the achievements of the first American woman astronomer?",
       "options": [
+        "Miss Mitchell's Comet",
         "Discovery of Uranus",
         "Calculation of Earth's Circumference",
-        "Miss Mitchell's Comet",
         "Formulation of Kepler's Laws"
       ],
       "correct_answer": "Miss Mitchell's Comet",
@@ -262,8 +262,8 @@
       "question": "Which pet accessory improvisation was done by a woman?",
       "options": [
         "Bio-metric Collar with GPS Tracking",
-        "Ergonomic Canine Control System",
         "Retractable Dog Leash",
+        "Ergonomic Canine Control System",
         "Automated Treat Dispensing Lead"
       ],
       "correct_answer": "Retractable Dog Leash",
@@ -289,8 +289,8 @@
       "question": "Which cosmic phenomenon's discovery is attributed to a woman astronomer's meticulous observations?",
       "options": [
         "Exoplanetary System Formation",
-        "Galactic Supermassive Black Holes",
         "Dark Matter",
+        "Galactic Supermassive Black Holes",
         "Cosmic Microwave Background Radiation"
       ],
       "correct_answer": "Dark Matter",
@@ -302,8 +302,8 @@
       "options": [
         "Automated Laundry Sorter",
         "Robotic Vacuum Cleaner",
-        "Practical Dishwasher",
-        "Self-Cleaning Oven Technology"
+        "Self-Cleaning Oven Technology",
+        "Practical Dishwasher"
       ],
       "correct_answer": "Practical Dishwasher",
       "inventor_image_url": "https://www.imaninspires.com/wp-content/uploads/2023/03/img_9914-1.jpg",
@@ -315,9 +315,9 @@
     {
       "question": "Which internert protocol was invented by a woman?",
       "options": [
+        "Spanning Tree Protocol (STP)",
         "Border Gateway Protocol (BGP)",
         "Transmission Control Protocol (TCP)",
-        "Spanning Tree Protocol (STP)",
         "Internet Protocol (IP)"
       ],
       "correct_answer": "Spanning Tree Protocol (STP)",
@@ -340,8 +340,8 @@
       "question": "Which skate design was improved by a woman fashion icon?",
       "options": [
         "In-line Rollerblade System",
-        "Tri-Wheel Stability Skate",
         "Quad Skates design",
+        "Tri-Wheel Stability Skate",
         "Articulated Speed Skate"
       ],
       "correct_answer": "Quad Skates design",
@@ -349,5 +349,162 @@
       "short_story": "Madeleine Vionnet – Quad Skate Design Improvement (1910s, France)\n\nadeleine Vionnet loved roller skating but found existing skates clunky and hard to control. Applying her design skills, she refined the quad skate, allowing for smoother turns and better balance. Many dismissed her ideas, as she was better known for fashion than engineering, but her improvements revolutionized skating. Today, her design remains the foundation for modern roller skates, seen everywhere from rinks to roller derbies.",
       "fun_fact_comment": "Next time you lace up roller skates, remember Madeleine Vionnet making fun on wheels smoother for us all, one stylish design at a time!"
     }
-  ]
-}
+  ],
+    "quiz_set_10": [
+      {
+        "question": "Genetic blueprint insight - woman scientist's crucial data for what biological structure?",
+        "options": [
+          "Ribonucleic Acid (RNA) Secondary Structure",
+          "Transfer RNA (tRNA) Molecular Conformation",
+          "Deoxyribonucleic Acid (DNA) Double Helix",
+          "Messenger RNA (mRNA) Codon Sequence"
+        ],
+        "correct_answer": "Deoxyribonucleic Acid (DNA) Double Helix",
+        "inventor_image_url": "https://cdn.britannica.com/30/99730-050-E68F62FF/Rosalind-Franklin.jpg?w=300",
+        "short_story": "Rosalind Franklin – DNA Structure (1952, UK)\n\nIn a dimly lit London lab, Rosalind Franklin captured Photo 51, a striking X-ray image revealing DNA’s double-helix structure. She meticulously worked with X-ray diffraction, unraveling life’s blueprint, yet her research was taken without credit, leading to Watson and Crick’s Nobel Prize years later. Despite the oversight, her work remains foundational to genetics, medicine, and DNA research, shaping everything from forensics to gene therapy."
+      },
+      {
+        "question": "Sustainable energy pioneer - woman architect designed systems using what power source for heating?",
+        "options": [
+          "Geothermal Gradient Energy",
+          "Passive Solar Heat Collection",
+          "Thermoelectric Energy Conversion",
+          "Solar-Powered Heating Systems"
+        ],
+        "correct_answer": "Solar-Powered Heating Systems",
+        "inventor_image_url": "https://www.uspto.gov/sites/default/files/joi0424_telkes_leaving_mit.jpg",
+        "short_story": "Mária Telkes – Solar-Powered Heating Systems (1940s, USA)\n\nDuring World War II, Hungarian-American scientist Mária Telkes saw the potential of solar energy when fossil fuels were scarce. In 1948, she designed the first solar-heated house, using innovative salt-based heat storage. Many dismissed her ideas as impractical, but she proved that renewable energy could power homes. Today, her pioneering work paved the way for modern solar panels and sustainable heating systems worldwide."
+      },
+      {
+        "question": "Frozen treat evolution - woman's recipes popularized which chilled dessert in a cone?",
+        "options": [
+          "Snow Cones in Wafer Form",
+          "Ice Cream Cone",
+          "Fruit Sorbet in Baked Cups",
+          "Frozen Yogurt in Pastry Shells"
+        ],
+        "correct_answer": "Ice Cream Cone",
+        "inventor_image_url": "https://recollections.biz/blog/wp-content/uploads/2024/08/Marshalls-Portrait01.jpg",
+        "short_story": " Agnes Marshall – Ice Cream Cone Popularization & Recipes (Late 1800s, UK)\n\nIn Victorian England, Agnes Marshall—known as the \"Queen of Ice Cream\"—revolutionized frozen desserts. She experimented with liquid nitrogen for fast freezing and popularized the edible ice cream cone long before it became a fairground staple. Despite being ahead of her time, she never received the widespread credit she deserved. Today, her influence lives on in every scoop served in a cone, making ice cream more portable and fun.",
+        "fun_fact_comment": "Next time you enjoy an ice cream cone, remember Agnes Marshall making dessert time sweeter for us all, one delicious cone at a time!"
+      }
+    ],
+      "quiz_set_11": [
+        {
+          "question": "Critical for space race era – woman chemist's fuel for which pioneering rocket?",
+          "options": [
+            "Saturn V Lunar Rocket",
+            "Space Shuttle Main Engine",
+            "Hydyne Rocket Fuel (First U.S. Satellite)",
+            "Project Apollo Lunar Module Ascent Engine"
+          ],
+          "correct_answer": "Hydyne Rocket Fuel (First U.S. Satellite)",
+          "inventor_image_url": "https://static.wixstatic.com/media/24a7f2_737be24b73f7485dab455e0d23b9cd37~mv2.jpg/v1/fill/w_648,h_768,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/24a7f2_737be24b73f7485dab455e0d23b9cd37~mv2.jpg",
+          "short_story": "Mary Sherman Morgan – Hydyne Rocket Fuel (First U.S. Satellite) (1957, USA)\n\nWith the Space Race in full swing, American rockets kept failing—until Mary Sherman Morgan, a self-taught chemist, developed Hydyne, a more powerful rocket fuel. Working in secrecy, she solved a critical combustion problem, allowing the Jupiter-C rocket to launch America’s first satellite, Explorer 1. Despite this breakthrough, her contributions remained largely unknown. Today, her work is a cornerstone of modern rocketry, proving that hidden figures can still shape history."
+        },
+        {
+          "question": "Molecular structure mystery solved - woman's X-ray work deciphered which essential biomolecule?",
+          "options": [
+            "Hemoglobin Protein Quaternary Structure",
+            "Myoglobin Oxygen-Binding Site",
+            "Insulin Hormone Tertiary Fold", 
+            "Vitamin B12 Molecular Structure"
+          ],
+          "correct_answer": "Vitamin B12 Molecular Structure",
+          "inventor_image_url": "https://blog.sciencemuseum.org.uk/wp-content/uploads/2014/12/Dorothy-Hodgkin-credit-Science-Museum-SSPL-low-res1-803x1024.jpg",
+          "short_story": "Dorothy Hodgkin – Vitamin B12 Structure (X-ray Crystallography) (1956, UK)\n\nIn a small, cluttered lab, Dorothy Hodgkin peered into the invisible world of molecules, using X-ray crystallography to map the complex structure of Vitamin B12, essential for treating pernicious anemia. The process took years of painstaking calculations by hand, but her discovery earned her a Nobel Prize—still, many dismissed her work as just "women’s intuition." Today, her methods are used in drug development, shaping treatments for diseases worldwide."
+        },
+        {
+          "question": "Home aquatic habitats - woman naturalist conceptualized which clear-walled enclosure?",
+          "options": [
+            "Modern Fish Tank (Aquarium)",
+            "Recirculating Mariculture System",
+            "Controlled Environment Vivarium",
+            "Submersible Observation Chamber"
+          ],
+          "correct_answer": "Modern Fish Tank (Aquarium)",
+          "inventor_image_url": "https://www.unict.it/sites/default/files/images/Jeanne%20Villepreux-Power%2C%20fotografata%20nel%201861%20da%20Andr%C3%A9-Adolphe-Eug%C3%A8ne%20Disd%C3%A9ri.jpg",
+          "short_story": "Jeanne Villepreux-Power – The Modern Aquarium (1832, France)\n\nWhile studying marine life in Sicily, Jeanne Villepreux-Power realized there was no way to observe sea creatures up close without removing them from their environment. She designed the first glass aquarium, allowing scientists to study aquatic life in controlled conditions. Though many of her findings were lost in a shipwreck, her invention revolutionized marine biology and today, her idea lives on in aquariums worldwide.",
+          "fun_fact_comment": "Next time you gaze into an aquarium, remember Jeanne Villepreux-Power making underwater worlds clearer for us all, one sweet view at a time!"
+        }
+      ],
+        "quiz_set_12": [
+          {
+            "question": "Medical breakthrough for millions - woman chemist's pioneering treatment for which disease?",
+            "options": [
+              "Leprosy (Hansen's Disease)",
+              "Tuberculosis (TB)",
+              "Poliomyelitis (Polio)",
+              "Smallpox"
+            ],
+            "correct_answer": "Leprosy (Hansen's Disease)",
+            "inventor_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Alice_Augusta_Ball.jpg",
+            "short_story": "Alice Ball – First Injectable Leprosy Treatment (1915, USA)\n\nAt just 23 years old, chemist Alice Ball developed the first effective injectable treatment for leprosy, transforming chaulmoogra oil into a usable medicine. Before her work, leprosy patients faced isolation with no cure. Tragically, she died before seeing its impact, and for years, a male colleague took credit for her breakthrough. Today, her \"Ball Method\" is recognized as a milestone in modern medicine, saving countless lives."
+          },
+          {
+            "question": "Revolutionary material for safety – woman chemist's invention now used in which protective gear?",
+            "options": [
+              "Advanced Fire-Retardant Fabric",
+              "High-Tensile Ballistic-Resistant Material (Kevlar)",
+              "Lightweight Structural Composite Armor",
+              "Self-Healing Polymer for Impact Protection"
+            ],
+            "correct_answer": "High-Tensile Ballistic-Resistant Material (Kevlar)",
+            "inventor_image_url": "https://www.sciencehistory.org/wp-content/uploads/2023/04/bio-kwolek-microscope-640x500.jpg",
+            "short_story": "Stephanie Kwolek – Kevlar (Everyday Safety Uses) (1965, USA)\n\nWhile searching for lightweight materials for tires, Stephanie Kwolek accidentally discovered Kevlar, a fiber stronger than steel. Many doubted her findings, but her persistence led to the creation of bulletproof vests, helmets, and protective gear. Initially overlooked in a male-dominated field, her work now protects millions—from law enforcement to athletes and astronauts."
+          },
+          {
+            "question": "Beloved baked good – woman's recipe mishap led to which globally popular treat?",
+            "options": [
+              "Cocoa Nib Shortbread Variant",
+              "Malted Milk Chocolate Biscuit",
+              "Artisanal Brown Sugar Drop",
+              "Chocolate Chip Cookies"
+            ],
+            "correct_answer": "Chocolate Chip Cookies",
+            "inventor_image_url": "https://images.findagrave.com/photos/2024/325/3065_9ab6dbf9-e86c-4a53-b003-6aca56e54b8a.jpeg?size=photos250",
+            "short_story": "Ruth Graves Wakefield – Chocolate Chip Cookies (1938, USA)\n\nOne evening at the Toll House Inn, baker Ruth Wakefield ran out of baking chocolate, so she chopped up a bar, expecting it to melt—but the chunks stayed intact, creating the first chocolate chip cookies. She struck a deal with Nestlé, exchanging the recipe for a lifetime supply of chocolate—a sweet trade! Today, her accidental creation is one of the world’s favorite treats, proving that delicious mistakes can change history.",
+            "fun_fact_comment": "Next time you savor a chocolate chip cookie, remember Ruth Wakefield making snack time sweeter for us all, one delicious chip at a time!"
+          }
+        ],
+          "quiz_set_13": [
+            {
+              "question": "Deep-sea exploration tool - woman's contributions enhanced which submersible?",
+              "options": [
+                "Trieste Deep-Diving Bathyscaphe",
+                "Alvin Submersible Research Vessel",
+                "Bathysphere Deep-Sea Submersible",
+                "Challenger Deep Manned Descent Vehicle"
+              ],
+              "correct_answer": "Bathysphere Deep-Sea Submersible",
+              "inventor_image_url": "https://upload.wikimedia.org/wikipedia/en/f/f2/Gloria_Hollister_with_dog.jpg",
+              "short_story": "Gloria Hollister – Bathysphere Deep-Sea Dives & Improvements (1930s, USA)\n\nIn an era when the deep ocean was as mysterious as space, Gloria Hollister joined the first deep-sea explorations in the Bathysphere, a steel sphere lowered by a cable. As the first woman to operate its communication systems, she helped improve its design and safety, enabling dives over 3,000 feet deep—a record at the time. Though often overshadowed, her work paved the way for modern deep-sea exploration, revealing life in the ocean\’s darkest depths."
+            },
+            {
+              "question": "Fundamental physics verification - woman physicist's experiment proved violation of what principle?",
+              "options": [
+                "Parity Conservation in Weak Interactions",
+                "Principle of Superposition (Quantum Mechanics)",
+                "Heisenberg Uncertainty Principle",
+                "Einstein's Equivalence Principle"
+              ],
+              "correct_answer": "Parity Conservation in Weak Interactions",
+              "inventor_image_url": "https://www.nps.gov/common/uploads/people/nri/20200122/people/13EBA5CA-D6A6-F089-CC36BC1BFE1F84A0/13EBA5CA-D6A6-F089-CC36BC1BFE1F84A0.jpg",
+              "short_story": "Chien-Shiung Wu – Experimental Proof of Parity Violation in Weak Nuclear Interactions (1956, USA)\n\nWhile others assumed nature was symmetrical, physicist Chien-Shiung Wu proved otherwise. Her famous Wu Experiment showed that weak nuclear forces violate parity, revolutionizing physics. Despite her work being essential for the Nobel Prize in 1957, it was awarded only to her male colleagues. Known as the \"First Lady of Physics,\" Wu\’s discovery is now fundamental in quantum mechanics and nuclear science."
+            },
+            {
+              "question": "Building safety advancement - woman's design for which external escape structure?",
+              "options": [
+                "Automated Rope Descent System",
+                "Exterior Stairway Fire Escape",
+                "Internal Fire-Resistant Shelter",
+                "Emergency Evacuation Slide System"
+              ],
+              "correct_answer": "Exterior Stairway Fire Escape",
+              "inventor_image_url": "https://d207ibygpg2z1x.cloudfront.net/image/upload/dpr_2.0,q_auto,w_500/v1/articles_upload/content/v9iwelabvwhagxup4dym.webp",
+              "short_story": "Anna Connelly – Fire Escape (Exterior Stairway) (1887, USA)\n\nWatching buildings go up in flames with no safe way out, Anna Connelly designed the modern exterior fire escape, a simple but life-saving invention. In a time when women inventors were rare, she secured a patent, ensuring safer evacuations in apartment buildings, schools, and factories. Over a century later, her idea continues to save lives in cities worldwide.",
+              "fun_fact_comment": "Next time you stumble upon a fire escape, remember Anna Connelly making building exits safer for us all, one sweet step at a time!"
+            }
+          ]
+    
+    }
