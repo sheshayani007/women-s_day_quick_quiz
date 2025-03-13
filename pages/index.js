@@ -344,19 +344,3 @@ const fireConfetti = () => {
 
 // Call `fireConfetti()` when the user selects the correct answer
 
-export async function getStaticProps() {
-  try {
-    const res = await fetch('http://localhost:3000/api/quiz'); 
-    if (!res.ok) throw new Error('Failed to fetch quiz data');
-
-    const data = await res.json();
-    return { props: { quizData: data } };
-  } catch (error) {
-    console.error('Error fetching quiz:', error);
-    return { props: { quizData: null } };
-  }
-}
-useEffect(() => {
-  console.log(window.innerWidth); // Runs only in the browser
-}, []);
-
