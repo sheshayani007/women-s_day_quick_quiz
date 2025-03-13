@@ -25,7 +25,7 @@
       "short_story": "Emmy Noether – Noether’s Theorem (1918, Germany)\n\nWhile studying the deep connections in physics, Emmy Noether noticed a hidden pattern—symmetry wasn’t just beauty, it was law. Her groundbreaking Noether’s Theorem proved that every symmetry in nature corresponds to a conservation law—for example, the fact that energy never disappears comes from the symmetry of time. Despite being more brilliant than many of her male peers, she wasn’t allowed to hold a paid university position for years. Today, her work is fundamental in everything from quantum mechanics to relativity, shaping the very way we understand the universe."
     },
     {
-      "question": "Woman's ingenuity - which kitchen item?",
+      "question": "Which of these everyday inventions was developed by a woman",
       "options": [
         "Percolator System",
         "Coffee Filter",
@@ -169,7 +169,7 @@
       "short_story": "Jocelyn Bell Burnell – Discovery of Pulsars (1967, UK)\n\nAs a graduate student analyzing radio signals, Jocelyn Bell Burnell noticed an odd, rhythmic pulse from deep space—something never seen before. Many dismissed it as interference, but she persisted and discovered pulsars, rapidly spinning neutron stars. Though her male supervisor won the Nobel Prize, her discovery reshaped astrophysics, leading to advancements in gravitational waves and space-time research."
     },
     {
-      "question": "Which of these is a woman's discovery about what chromosomal event?",
+      "question": "Which of these is a woman's discovery about chromosomal event?",
       "options": [
         "Chromosomal Translocation",
         "Sister Chromatid Exchange",
@@ -247,7 +247,7 @@
       "short_story": "Maria Mitchell – First American Woman Astronomer (1847, USA)\n\nOne night in 1847, Maria Mitchell looked through her telescope and saw something no one else had—a new comet. It earned her international fame, but recognition didn’t come easy. Despite her sharp mind, she had to fight for a place in astronomy, a field dominated by men. Still, she became America’s first female professional astronomer, paving the way for women in science. Today, “Miss Mitchell’s Comet” remains a symbol of discovery, curiosity, and breaking barriers."
     },
     {
-      "question": "Which of these technologies for is credited to a woman physicist?",
+      "question": "Which of these technologies for reducing glare is credited to a woman physicist?",
       "options": [
         "Glass Tempering Process",
         "Chromatic Aberration Correction",
@@ -376,7 +376,7 @@
         "short_story": "Mária Telkes – Solar-Powered Heating Systems (1940s, USA)\n\nDuring World War II, Hungarian-American scientist Mária Telkes saw the potential of solar energy when fossil fuels were scarce. In 1948, she designed the first solar-heated house, using innovative salt-based heat storage. Many dismissed her ideas as impractical, but she proved that renewable energy could power homes. Today, her pioneering work paved the way for modern solar panels and sustainable heating systems worldwide."
       },
       {
-        "question": "Frozen treat evolution - woman's recipes popularized which chilled dessert in a cone?",
+        "question": "Frozen treat evolution - woman's recipes popularized which chilled dessert?",
         "options": [
           "Snow Cones in Wafer Form",
           "Ice Cream Cone",
@@ -403,7 +403,7 @@
           "short_story": "Mary Sherman Morgan – Hydyne Rocket Fuel (First U.S. Satellite) (1957, USA)\n\nWith the Space Race in full swing, American rockets kept failing—until Mary Sherman Morgan, a self-taught chemist, developed Hydyne, a more powerful rocket fuel. Working in secrecy, she solved a critical combustion problem, allowing the Jupiter-C rocket to launch America’s first satellite, Explorer 1. Despite this breakthrough, her contributions remained largely unknown. Today, her work is a cornerstone of modern rocketry, proving that hidden figures can still shape history."
         },
         {
-          "question": "Molecular structure mystery solved - woman's X-ray work deciphered which essential biomolecule?",
+          "question": "Woman's X-ray work deciphered which essential biomolecule?",
           "options": [
             "Hemoglobin Protein Quaternary Structure",
             "Myoglobin Oxygen-Binding Site",
@@ -415,7 +415,7 @@
           "short_story": "Dorothy Hodgkin – Vitamin B12 Structure (X-ray Crystallography) (1956, UK)\n\nIn a small, cluttered lab, Dorothy Hodgkin peered into the invisible world of molecules, using X-ray crystallography to map the complex structure of Vitamin B12, essential for treating pernicious anemia. The process took years of painstaking calculations by hand, but her discovery earned her a Nobel Prize—still, many dismissed her work as just \"women\\’s intuition.\" Today, her methods are used in drug development, shaping treatments for diseases worldwide."
         },
         {
-          "question": "Home aquatic habitats - woman naturalist conceptualized which clear-walled enclosure?",
+          "question": "Woman naturalist conceptualized which clear-walled enclosure?",
           "options": [
             "Modern Fish Tank (Aquarium)",
             "Recirculating Mariculture System",
@@ -481,14 +481,14 @@
               "short_story": "Gloria Hollister – Bathysphere Deep-Sea Dives & Improvements (1930s, USA)\n\nIn an era when the deep ocean was as mysterious as space, Gloria Hollister joined the first deep-sea explorations in the Bathysphere, a steel sphere lowered by a cable. As the first woman to operate its communication systems, she helped improve its design and safety, enabling dives over 3,000 feet deep—a record at the time. Though often overshadowed, her work paved the way for modern deep-sea exploration, revealing life in the ocean\\’s darkest depths."
             },
             {
-              "question": "Fundamental physics verification - woman physicist's experiment proved violation of what principle?",
+              "question": "Woman physicist's experiment proved violation of what principle?",
               "options": [
-                "Parity Conservation in Weak Interactions",
+                "Parity Conservation in Weak Nuclear Interactions",
                 "Principle of Superposition (Quantum Mechanics)",
                 "Heisenberg Uncertainty Principle",
                 "Einstein's Equivalence Principle"
               ],
-              "correct_answer": "Parity Conservation in Weak Interactions",
+              "correct_answer": "Parity Conservation in Weak Nuclear Interactions",
               "inventor_image_url": "https://www.nps.gov/common/uploads/people/nri/20200122/people/13EBA5CA-D6A6-F089-CC36BC1BFE1F84A0/13EBA5CA-D6A6-F089-CC36BC1BFE1F84A0.jpg",
               "short_story": "Chien-Shiung Wu – Experimental Proof of Parity Violation in Weak Nuclear Interactions (1956, USA)\n\nWhile others assumed nature was symmetrical, physicist Chien-Shiung Wu proved otherwise. Her famous Wu Experiment showed that weak nuclear forces violate parity, revolutionizing physics. Despite her work being essential for the Nobel Prize in 1957, it was awarded only to her male colleagues. Known as the \"First Lady of Physics,\" Wu\\’s discovery is now fundamental in quantum mechanics and nuclear science."
             },
