@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+import Lottie from "lottie-react";
+import winkEmoji from "../public/wink_emoji.json"; // Import the local JSON
+import meltingEmoji from "../public/melting_emoji.json"; // Import the local JSON
 
 export default function Quiz() {
   const [quizData, setQuizData] = useState([]);
@@ -36,6 +39,14 @@ export default function Quiz() {
     }
   };
 
+  const handlePrevious = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+      setSelectedAnswer(null);
+      setShowResult(false);
+    }
+  };
+
   return (
     <div style={styles.container}>
       {!quizEnded && <h2 style={styles.quizTitle}>Women’s Day Quick Quiz</h2>} {/* Title only for questions */}
@@ -58,28 +69,27 @@ export default function Quiz() {
                     if (option === currentQuestion.correct_answer) {
                       fireConfetti(); // 🎉 Trigger confetti animation
                     }
-              
                     setTimeout(() => setShowResult(true), 300);
+
                   }} 
 
                   style={{
                     ...styles.optionBox,
                     borderColor: isSelected
                       ? isCorrect
-                        ? 'green'
-                        : 'red'
+                        ? '#3d8c40'
+                        : '#b7091d'
                       : '#ccc',
                   }}
                 >
                   <span
                     style={{
                       ...styles.bullet,
-                      borderColor: isSelected ? (isCorrect ? 'green' : 'red') : '#bbb',
-                      backgroundColor: isSelected ? (isCorrect ? 'green' : 'red') : 'transparent',
-                      animation: selectedAnswer && option !== currentQuestion.correct_answer ? 'shake 5s ease-in-out' : 'none',
+                      borderColor: isSelected ? (isCorrect ? '#3d8c40' : '##b7091d') : '#bbb',
+                      backgroundColor: isSelected ? (isCorrect ? '#3d8c40' : '#b7091d') : 'transparent',
                     }}
                   >
-                    {isSelected ? (isCorrect ? '🎉' : '😔') : String.fromCharCode(65 + index)}
+                    {isSelected ? (isCorrect ? '🎉' : <Lottie animationData = {meltingEmoji} loop={true} style={{ width: "25px", height: "25px" }} />) : String.fromCharCode(65 + index)}
 
                   </span>
                   {option}
@@ -94,7 +104,10 @@ export default function Quiz() {
                     ? 'Correct Answer'
                     : `Correct Answer: ${currentQuestion.correct_answer}`}
                   {currentQuestionIndex % 3 === 2 && (
-                    <span style={styles.specialMessage}> – Real change doesn't always need complexity😉</span>
+                    <>
+                      
+                      <span style={styles.specialMessage}> – Real change doesn't always need complexity😉</span> 
+                    </>
                   )}
                 </p>
 
@@ -104,7 +117,8 @@ export default function Quiz() {
                     alt="Inventor"
                     style={styles.image}
                   />
-                  <p style={styles.story}>{currentQuestion.short_story}</p>
+                 <p style={styles.storyTitle}>{currentQuestion.short_story.split('\n\n')[0]}</p>
+                  <p style={styles.storyText}> {currentQuestion.short_story.split('\n\n')[1]}</p>
                 </div>
               </div>
             )}
@@ -119,19 +133,56 @@ export default function Quiz() {
             >
               Next
             </button>
+            <button
+              onClick={handlePrevious}
+              disabled={currentQuestionIndex === 0} // Disable button on first question
+              style={{
+                color: currentQuestionIndex === 0 ? "#d3d3d3" : "#808080",
+                padding: "-10px 15px",
+                borderRadius: "5px",
+                background: "none",
+                backgroundColor: "transparent",
+                border: "none",
+                fontSize: "20px",
+                transition: "color 0.3s ease-in-out",  
+                alignSelf: 'flex-start', // Ensures right alignment
+                display: 'block', // Makes it behave as a block element
+                marginRight: 'auto', // Pushes it to the right          
+              }}
+            >
+             ←
+            </button>
           </>
         ) : (
           <>
-            <h2>Thank You for Playing! 🎉</h2>
+            <h2>Thank You for Playing🎉</h2>
             <p style={styles.funFact}>{currentQuestion.fun_fact_comment}</p>
+            <button
+              onClick={(e) => {
+                e.target.style.backgroundColor = "#51074a"; // Change color on click
+                setTimeout(() => window.location.reload(), 200); // Reload page after slight delay
+              }}
+              style={{
+                position: "absolute",
+                bottom: "10px",
+                right: "50px",
+                padding: "10px 15px",
+                backgroundColor: "#d69cbc",
+                color: "white",
+                border: "none",
+                borderRadius: "5px",
+                fontSize: "14px",
+                cursor: "pointer",
+              }}
+            >
+              Learn more
+            </button>
           </>
         )}
       </div>
     </div>
   );
 }
-
-
 
 const styles = {
   container: {
@@ -140,8 +191,9 @@ const styles = {
     alignItems: 'center',
     height: '100vh',
     flexDirection: 'column',
-    backgroundColor: 'white',
+    backgroundColor: '#FAFAF5',
     animation: 'fadeIn 0.5s forwards',
+    fontFamily: "'Merriweather', serif",
   },
   card: {
     backgroundColor: '#FCF5E5',
@@ -160,9 +212,10 @@ const styles = {
   },
   quizTitle: {
     color: '#51074a',
-    fontSize: '30px',
+    fontSize: '28px',
     fontWeight: 'bold',
     marginBottom: '10px',
+    fontFamily: "'Cormorant Garamond', serif",
   },
   question: {
     fontSize: '22px',
@@ -176,7 +229,7 @@ const styles = {
     padding: '5px',
     margin: '5px 0',
     borderRadius: '30px',
-    border: '1px solid gray',
+    border: '1.3px solid gray',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
     width: '90%',
@@ -192,6 +245,8 @@ const styles = {
     border: '1px solid #bbb',
     fontSize: '14px',
     backgroundColor: 'transparent',
+    transition: "all 0.3s ease",
+    
   },
   answerSection: {
     marginTop: '10px',
@@ -202,11 +257,20 @@ const styles = {
     fontSize: '14px',
     color: '#2a2a2a',    
     fontWeight: 'bold',
+    fontFamily: "'Cormorant Garamond', serif",
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: '10px',
+    marginTop: '10px',
   },
   specialMessage: {
-    fontSize: '15px',
+    fontSize: '14px',
     color: '#545454',
+    fontWeight: 'normal',
     marginLeft: '5px',
+    fontFamily: "'Cormorant Garamond', serif",
+    fontWeight: 'italic',
+    fontWeight: 'extra-light',
     },
   storyCard: {
     backgroundColor: '#FFFAF0',
@@ -217,20 +281,42 @@ const styles = {
   },
   image: {
     width: '100%',
-    maxWidth: '200px',
+    height: 'auto',
+    maxWidth: '300px',
+    objectfit: 'cover',
+    objectFit: 'contain', // Ensures full image is visible without cropping
     borderRadius: '8px',
+    marginLeft: '10px',
+    marginRight: '10px',
     marginBottom: '10px',
-    marginTop: '10px',
-    animation: 'fadeIn 0.9s forwards'
+    marginTop: '11px',
+    animation: 'fadeIn 1.1s forwards',
+    borderRadius: "5px",    // Rounded corners for aesthetics
+    display: "block",
+    margin: "0 auto 10px",
   },
-  story: {
+  storyText: {
     fontSize: '16px',
     color: 'gray',
     textAlign: 'left',
     marginBottom: '10px',
     marginTop: '10px',
-    animation: 'fadeIn 2s forwards'
+    marginLeft: '10px',
+    marginRight: '10px',
+    animation: 'fadeIn 1.6s forwards'
   },
+  storyTitle: {
+    fontSize: '15px',
+    fontWeight: 'bold',
+    textAlign: 'center', // ✅ Centers the first line
+    marginBottom: '8px',
+    marginLeft: '10px',
+    marginRight: '10px',
+    color: '#3f3f3f',
+    animation: 'fadeIn 1.2s forwards',
+    fontFamily: "'Cormorant Garamond', serif",
+  },
+
   nextButton: {
     marginTop: '10px',
     padding: '8px 15px',
@@ -245,16 +331,10 @@ const styles = {
     marginLeft: 'auto', // Pushes it to the right
   },
   funFact: {
-    fontSize: '14px',
-    color: '#51074a',
+    fontSize: '16px',
+    color: '#6a6a6a',
   },
-  keyframesShake: {
-    '0%': { transform: 'translateX(0)' },
-    '25%': { transform: 'translateX(-3px)' },
-    '50%': { transform: 'translateX(3px)' },
-    '75%': { transform: 'translateX(-3px)' },
-    '100%': { transform: 'translateX(0)' },
-  },
+
 };
 
 import confetti from 'canvas-confetti';
@@ -263,6 +343,7 @@ const fireConfetti = () => {
   confetti({
     particleCount: 100,
     spread: 70,
+    initialVelocityY: -25,
     origin: { y: 0.6 }, // Adjust origin for better effect
     colors: ['#ffb6c1', '#8f83d8', '#d69cbc', '#51074a', '#191970'],
   });
@@ -270,11 +351,4 @@ const fireConfetti = () => {
 
 // Call `fireConfetti()` when the user selects the correct answer
 
-const triggerSadEffect = (x, y) => {
-  confetti({
-    particleCount: 30,
-    spread: 70,
-    origin: { y: 0.6 }, // Adjust origin for better effect,
-    colors: ['#ff0000', '#ff6961'],
-  });
-}; // Call `triggerSadEffect()` when the user selects the wrong answer
+
