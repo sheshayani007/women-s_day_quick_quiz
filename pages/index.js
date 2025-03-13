@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
-import winkEmoji from "../public/wink_emoji.json"; // Import the local JSON
 import meltingEmoji from "../public/melting_emoji.json"; // Import the local JSON
 
 export default function Quiz() {
@@ -22,29 +21,6 @@ export default function Quiz() {
   if (quizData.length === 0) return <div>Loading quiz...</div>;
 
   const currentQuestion = quizData[currentQuestionIndex];
-
-  const handleAnswerClick = (option) => {
-    if (selectedAnswer) return;
-    setSelectedAnswer(option);
-    setTimeout(() => setShowResult(true), 300);
-  };
-
-  const handleOptionClick = (option) => {
-    if (selectedAnswers[currentQuestionIndex]) return; // Prevent reselection
-  
-    setSelectedAnswers((prev) => ({
-      ...prev,
-      [currentQuestionIndex]: option,
-    }));
-  
-    // Increment only the number of times played
-    setGameStats((prev) => ({
-      gamesPlayed: prev.gamesPlayed + 1,
-    }));
-  
-    setTimeout(() => setShowResult(true), 300);
-  };
-  
 
   const handleNextClick = () => {
     if (currentQuestionIndex < quizData.length - 1) {
@@ -123,7 +99,7 @@ export default function Quiz() {
                   {currentQuestionIndex % 3 === 2 && (
                     <>
                       
-                      <span style={styles.specialMessage}> – Real change doesn't always need complexity😉</span> 
+                      <span style={styles.specialMessage}> Real change doesn't always need complexity😉</span> 
                     </>
                   )}
                 </p>
@@ -282,12 +258,11 @@ const styles = {
     marginTop: '10px',
   },
   specialMessage: {
-    fontSize: '14px',
+    fontSize: '13px',
     color: '#545454',
     fontWeight: 'normal',
     marginLeft: '5px',
     fontFamily: "'Cormorant Garamond', serif",
-    fontWeight: 'italic',
     fontWeight: 'extra-light',
     },
   storyCard: {
