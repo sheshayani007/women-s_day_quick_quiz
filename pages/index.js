@@ -29,6 +29,23 @@ export default function Quiz() {
     setTimeout(() => setShowResult(true), 300);
   };
 
+  const handleOptionClick = (option) => {
+    if (selectedAnswers[currentQuestionIndex]) return; // Prevent reselection
+  
+    setSelectedAnswers((prev) => ({
+      ...prev,
+      [currentQuestionIndex]: option,
+    }));
+  
+    // Increment only the number of times played
+    setGameStats((prev) => ({
+      gamesPlayed: prev.gamesPlayed + 1,
+    }));
+  
+    setTimeout(() => setShowResult(true), 300);
+  };
+  
+
   const handleNextClick = () => {
     if (currentQuestionIndex < quizData.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -138,17 +155,18 @@ export default function Quiz() {
               disabled={currentQuestionIndex === 0} // Disable button on first question
               style={{
                 color: currentQuestionIndex === 0 ? "#d3d3d3" : "#808080",
-                padding: "-10px 15px",
+                padding: "10px 15px",
                 borderRadius: "5px",
                 background: "none",
                 backgroundColor: "transparent",
                 border: "none",
                 fontSize: "20px",
+                cursor: "pointer",
                 transition: "color 0.3s ease-in-out",  
                 alignSelf: 'flex-start', // Ensures right alignment
                 display: 'block', // Makes it behave as a block element
-                marginRight: 'auto', // Pushes it to the right          
-              }}
+                marginLeft: 'auto', // Pushes it to the right    
+                }}
             >
              ←
             </button>
