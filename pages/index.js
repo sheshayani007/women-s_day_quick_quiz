@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import meltingEmoji from "../public/melting_emoji.json"; // Import the local JSON
