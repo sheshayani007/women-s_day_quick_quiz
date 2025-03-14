@@ -114,7 +114,7 @@ export default function Quiz() {
                  <p style={styles.storyTitle}>{currentQuestion.short_story.split('\n\n')[0]}</p>
                   <p style={styles.storyText}> {currentQuestion.short_story.split('\n\n')[1]}</p>
                 </div>
-              </div>
+                </div>
             )}
 
             <button
@@ -184,7 +184,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',
+    height: '98vh',
     flexDirection: 'column',
     backgroundColor: '#FAFAF5',
     animation: 'fadeIn 0.5s forwards',
@@ -198,6 +198,7 @@ const styles = {
     textAlign: 'left',
     maxWidth: '500px',
     width: '70%',
+    height: 'auto',
     overflow: 'auto',
     scrollbarWidth: 'none', 
     marginTop: '20px',
@@ -206,14 +207,15 @@ const styles = {
   
   },
   quizTitle: {
+    alignment: 'center', 
     color: '#51074a',
-    fontSize: '28px',
+    fontSize: '25px',
     fontWeight: 'bold',
     marginBottom: '10px',
     fontFamily: "'Cormorant Garamond', serif",
   },
   question: {
-    fontSize: '22px',
+    fontSize: '20px',
     fontWeight: 'bold',
     marginBottom: '10px',
     color: '#2a2a2a',
@@ -240,12 +242,13 @@ const styles = {
     border: '1px solid #bbb',
     fontSize: '14px',
     backgroundColor: 'transparent',
-    transition: "all 0.3s ease",
+    transition: "ease-in-out 0.3s",
     
   },
   answerSection: {
     marginTop: '10px',
-    animation: 'fadeIn 0.7s forwards',
+    animation: 'fadeIn 1.0s forwards',
+    transition: 'ease-in-out 0.5s',
     textAlign: 'left',
   },
   correctAnswer: {
@@ -284,7 +287,8 @@ const styles = {
     marginRight: '10px',
     marginBottom: '10px',
     marginTop: '11px',
-    animation: 'fadeIn 1.1s forwards',
+    animation: 'fadeIn 0.9s forwards',
+    transition: 'all 0.5s ease',
     borderRadius: "5px",    // Rounded corners for aesthetics
     display: "block",
     margin: "0 auto 10px",
@@ -297,7 +301,8 @@ const styles = {
     marginTop: '10px',
     marginLeft: '10px',
     marginRight: '10px',
-    animation: 'fadeIn 1.6s forwards'
+    animation: 'fadeIn 1.6s forwards',
+    transition: 'ease-in-out 0.5s',
   },
   storyTitle: {
     fontSize: '15px',
